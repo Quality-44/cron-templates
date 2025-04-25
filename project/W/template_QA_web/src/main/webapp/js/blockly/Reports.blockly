@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><blockly audit="false" blocklyType="WEB" bpmnAble="false" formTarget="" functionCategory="" linkHelp="" multilayer="false" resourceType="JS" ruleDescription="Reports" ruleName="Reports" ruleSynchronous="false" ruleTimeout="" ruleType="I" showAsFunction="false" soap="false" swagger="false">
+  <metadata scale="1" scrollx="484.70000000000005" scrolly="-80.50000000000011" target="RNpN!y4-ota*qdOonSxM"/>
+  <block asynccall="false" colour="#995ba5" datasourcetype="" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" score="9007199254740991" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" valueconstant="" x="-350" y="130">
+    <field customattributes="" name="NAME">openDashboard</field>
+    <statement name="STACK">
+      <block asynccall="false" colour="#487f7f" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="/*1*wCc[-gd[0b#7CHNT" multilayer="true" namespace="cronapi.util.openDashboard" origintype="procedures_opendashboard_callnoreturn" output="false" returntype="ObjectType.VOID" score="9007199254740991" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAbrir%20dashboard%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20respons%C3%A1vel%20por%20abrir%20um%20dashboard%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Dashboard%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide-a.cronapp.io/help?type=blockly&amp;amp;id=cronapi.util.openDashboard','cronapi.util.openDashboard')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_opendashboard_callnoreturn" valueconstant="">
+        <mutation name="{{cronapi.util.openDashboard}}" return-raw-type="undefined">
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Dashboard"/>
+        </mutation>
+        <value name="ARG0">
+          <block asynccall="false" colour="#487f7f" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="BHqRXg005Cy{TSpR*|F?" origintype="util_dashboard_list" output="true" score="9007199254740991" type="util_dashboard_list" valueconstant="">
+            <mutation>
+              <arg name="dashboards/pet.dashboard" value="dashboards/pet.dashboard"/>
+            </mutation>
+            <field customattributes="" name="SELECT">dashboards/pet.dashboard</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block asynccall="false" colour="#fca03b" datasourcetype="" id="RNpN!y4-ota*qdOonSxM" origintype="procedures_defnoreturn" output="false" score="9007199254740991" tooltip="Cria uma função que não tem retorno." type="procedures_defnoreturn" valueconstant="" x="-352" y="158">
+    <field customattributes="" name="NAME">openReport</field>
+    <statement name="STACK">
+      <block asynccall="false" colour="#487f7f" datasourcetype="" dependencyby="RNpN!y4-ota*qdOonSxM" id="C)~-#A,w1^JLB0kI@k_P" multilayer="true" namespace="cronapi.util.openReport" origintype="procedures_openreport_callnoreturn" output="false" returntype="ObjectType.VOID" score="9007199254740991" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAbrir%20Relat%C3%B3rio%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20responsavel%20por%20abrir%20um%20relat%C3%B3rio.%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Relat%C3%B3rio%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide-a.cronapp.io/help?type=blockly&amp;amp;id=cronapi.util.openReport','cronapi.util.openReport')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_openreport_callnoreturn" valueconstant="">
+        <mutation name="{{cronapi.util.openReport}}" return-raw-type="undefined">
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Relatório"/>
+        </mutation>
+        <value name="ARG0">
+          <block asynccall="false" colour="#487f7f" datasourcetype="" dependencyby="RNpN!y4-ota*qdOonSxM" id="?}p~Y_/6=y@he8_bmuVO" origintype="util_report_list" output="true" score="9007199254740991" type="util_report_list" valueconstant="">
+            <mutation>
+              <arg name="reports/pet.report" value="reports/pet.report"/>
+            </mutation>
+            <field customattributes="" name="SELECT">reports/pet.report</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+</blockly>

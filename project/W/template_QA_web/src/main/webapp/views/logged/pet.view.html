@@ -1,0 +1,101 @@
+<div id="starter" ng-init="" ng-destroy="" data-component="crn-start" screen-params="" primary-datasource="Pet">
+<h1 class="component-holder text-left h3 title col-md-12" xattr-position="text-left" xattr-type="h3" data-component="crn-text-component" id="crn-text-component-43514">Pet</h1>
+<datasource data-component="crn-datasource" filter="" name="Pet" entity="app.Pet" keys="_objectKey" rows-per-page="100" class="" schema="[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;notEmpty&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;nome&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;notEmpty&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;idade&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;notEmpty&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;raca&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;notEmpty&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;notEmpty&quot;:false,&quot;key&quot;:true}]" condition="{&quot;maxRecord&quot;:100,&quot;params&quot;:[],&quot;expression&quot;:{&quot;type&quot;:&quot;OR&quot;,&quot;args&quot;:[{&quot;type&quot;:&quot;%&quot;,&quot;left&quot;:&quot;nome&quot;,&quot;right&quot;:&quot;{{vars.search|raw}}&quot;,&quot;args&quot;:[]}]}}" lazy="true"></datasource>
+
+        <div role="search" ng-hide="Pet.inserting || Pet.editing" data-component="crn-textinput" id="crn-datasource-filter-general43514" class="col-md-12">
+            <div class="form-group">
+                <label for="textinput-filter" class="">{{"template.crud.search" | translate}}</label>
+                <input type="text" ng-model="vars.search" id="textinput-filter" class="form-control k-textbox" value="" placeholder="{{'template.crud.search' | translate}}">
+            </div>
+        </div>
+
+<div class="component-holder ng-scope  col-md-2" data-component="crn-button" id="crn-button-223334"><button class="btn k-button btn-block btn-default" ng-click="cronapi.server('blockly.Database.PopulatePet').run()" xattr-fullsize="btn-block" xattr-theme="btn-default" xattr-disabled=""><i class="glyphicon glyphicon-plus" icon-theme=""></i> <span class="" text-theme="">Popular dados</span></button></div><div class="component-holder ng-scope  col-md-2" data-component="crn-button" id="crn-button-80221"><button class="btn k-button btn-block btn-danger" ng-click="cronapi.server('blockly.Database.TruncatePet').run()" xattr-fullsize="btn-block" xattr-theme="btn-danger" xattr-disabled=""><i class="glyphicon glyphicon-trash" icon-theme=""></i> <span class="" text-theme="">Remover dados</span></button></div><div class="component-holder ng-scope  col-md-2" data-component="crn-button" id="crn-button-35171"><button class="btn k-button btn-block btn-success" ng-click="cronapi.client('js.blockly.Reports.openDashboard').run()" xattr-fullsize="btn-block" xattr-theme="btn-success" xattr-disabled=""><i class="" icon-theme=""></i> <span class="" text-theme="">Dashboard</span></button></div><div class="component-holder ng-scope  col-md-2" data-component="crn-button" id="crn-button-55641"><button class="btn k-button btn-block btn-primary" ng-click="cronapi.client('js.blockly.Reports.openReport').run()" xattr-fullsize="btn-block" xattr-theme="btn-primary" xattr-disabled=""><i class="" icon-theme=""></i> <span class="" text-theme="">Relatório</span></button></div><section ng-hide="Pet.editing || Pet.inserting" class="component-holder ng-binding ng-scope col-md-12" data-component="crn-cron-grid" id="cron-crn-grid-search">
+    <cron-grid options="{&quot;dataSourceScreen&quot;:{&quot;name&quot;:&quot;Pet&quot;,&quot;entity&quot;:&quot;app.Pet&quot;,&quot;entityDataSource&quot;:{&quot;id&quot;:&quot;app.Pet&quot;,&quot;customId&quot;:&quot;Pet&quot;,&quot;name&quot;:&quot;Pet&quot;,&quot;customQueryName&quot;:&quot;app.Pet&quot;,&quot;paramValues&quot;:[],&quot;entityFullName&quot;:&quot;app.entity.Pet&quot;,&quot;schemaFields&quot;:[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;notEmpty&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;nome&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;notEmpty&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;idade&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;notEmpty&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;raca&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;notEmpty&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;notEmpty&quot;:false,&quot;key&quot;:true}],&quot;type&quot;:&quot;entity&quot;,&quot;hasError&quot;:false},&quot;schema&quot;:[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;notEmpty&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;nome&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;notEmpty&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;idade&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;notEmpty&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;raca&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;notEmpty&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;notEmpty&quot;:false,&quot;key&quot;:true}],&quot;id&quot;:&quot;app.Pet&quot;},&quot;allowPaging&quot;:true,&quot;allowSorting&quot;:true,&quot;allowGrouping&quot;:false,&quot;allowSelectionTotalPageToShow&quot;:true,&quot;allowRefreshGrid&quot;:true,&quot;allowSelectionRow&quot;:true,&quot;hideModalButtons&quot;:true,&quot;editable&quot;:&quot;datasource&quot;,&quot;columns&quot;:[{&quot;dataType&quot;:&quot;Database&quot;,&quot;field&quot;:&quot;nome&quot;,&quot;headerText&quot;:&quot;Nome&quot;,&quot;type&quot;:&quot;string&quot;,&quot;sortable&quot;:true,&quot;filterable&quot;:true,&quot;format&quot;:&quot;&quot;,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;required&quot;:false,&quot;showAsImage&quot;:false,&quot;inputType&quot;:&quot;default&quot;,&quot;comboboxOptions&quot;:{&quot;dataSourceScreen&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;relationDataSource&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;customTemplate&quot;:false,&quot;fillDatasource&quot;:false},&quot;aggregates&quot;:[],&quot;widthDevices&quot;:[],&quot;buttonColumns&quot;:[]},{&quot;dataType&quot;:&quot;Database&quot;,&quot;field&quot;:&quot;idade&quot;,&quot;headerText&quot;:&quot;Idade&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;sortable&quot;:true,&quot;filterable&quot;:true,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;required&quot;:false,&quot;showAsImage&quot;:false,&quot;inputType&quot;:&quot;default&quot;,&quot;comboboxOptions&quot;:{&quot;dataSourceScreen&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;relationDataSource&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;customTemplate&quot;:false,&quot;fillDatasource&quot;:false},&quot;aggregates&quot;:[],&quot;widthDevices&quot;:[],&quot;buttonColumns&quot;:[]},{&quot;dataType&quot;:&quot;Database&quot;,&quot;field&quot;:&quot;raca&quot;,&quot;headerText&quot;:&quot;Raca&quot;,&quot;type&quot;:&quot;string&quot;,&quot;sortable&quot;:true,&quot;filterable&quot;:true,&quot;format&quot;:&quot;&quot;,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;required&quot;:false,&quot;showAsImage&quot;:false,&quot;inputType&quot;:&quot;default&quot;,&quot;comboboxOptions&quot;:{&quot;dataSourceScreen&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;relationDataSource&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;customTemplate&quot;:false,&quot;fillDatasource&quot;:false},&quot;aggregates&quot;:[],&quot;widthDevices&quot;:[],&quot;buttonColumns&quot;:[]},{&quot;dataType&quot;:&quot;Command&quot;,&quot;headerText&quot;:&quot;{{ 'Action' | translate }}&quot;,&quot;sortable&quot;:false,&quot;filterable&quot;:false,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;command&quot;:&quot;edit|destroy&quot;,&quot;required&quot;:false,&quot;showAsImage&quot;:false,&quot;inputType&quot;:&quot;default&quot;,&quot;comboboxOptions&quot;:{&quot;dataSourceScreen&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;relationDataSource&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;customTemplate&quot;:false,&quot;fillDatasource&quot;:false},&quot;aggregates&quot;:[],&quot;widthDevices&quot;:[],&quot;buttonColumns&quot;:[]}],&quot;toolBarButtons&quot;:[{&quot;type&quot;:&quot;Native&quot;,&quot;title&quot;:&quot;create&quot;}],&quot;details&quot;:[],&quot;groupings&quot;:[],&quot;fillDatasource&quot;:false,&quot;enableModalSaveAdd&quot;:false}" ng-model="vars.grid43514" class="" style="" scrollable="false">
+    </cron-grid>
+</section>
+
+<div data-component="crn-form" id="crn-form-form-Pet-43514" class="col-md-12">
+    <section class="form" ng-show="Pet.editing || Pet.inserting">
+        <form crn-datasource="Pet" class="">
+            <div class="tool-bar" ng-hide="datasource.editing || datasource.inserting">
+                <div class="component-holder ng-scope" data-component="crn-button" id="crn-button-startInserting">
+                    <button class="btn k-button btn-block btn-default btn-fab" ng-click="datasource.startInserting()" aria-label="{{'StartInserting' | translate}}" xattr-fullsize="btn-block" xattr-theme="btn-default" xattr-disabled="">
+                        <i class="glyphicon glyphicon-plus" icon-theme=""></i>
+                    </button>
+                </div>
+                <div class="component-holder ng-scope" data-component="crn-button" id="crn-button-startEditing">
+                    <button class="btn k-button btn-block btn-default btn-fab" ng-click="datasource.startEditing()" aria-label="{{'startEditing' | translate}}" xattr-fullsize="btn-block" xattr-theme="btn-default" xattr-disabled="">
+                        <i class="glyphicon glyphicon-pencil" icon-theme=""></i>
+                    </button>
+                </div>
+                <div class="component-holder ng-scope" data-component="crn-button" id="crn-button-previous">
+                    <button class="btn k-button btn-block btn-default btn-fab" ng-click="datasource.previous()" ng-disabled="!datasource.hasPrevious()" aria-label="{{'Before' | translate}}" xattr-fullsize="btn-block" xattr-theme="btn-default" xattr-disabled="">
+                        <i class="glyphicon glyphicon-chevron-left" icon-theme=""></i>
+                    </button>
+                </div>
+                <div class="component-holder ng-scope" data-component="crn-button" id="crn-button-next">
+                    <button class="btn k-button btn-block btn-default btn-fab" ng-click="datasource.next()" ng-disabled="!datasource.hasNext()" aria-label="{{'Next' | translate}}" xattr-fullsize="btn-block" xattr-theme="btn-default" xattr-disabled="">
+                        <i class="glyphicon glyphicon-chevron-right" icon-theme=""></i>
+                    </button>
+                </div>
+                <div class="component-holder ng-scope" data-component="crn-button" id="crn-button-remove">
+                    <button class="btn k-button btn-block btn-danger btn-fab" ng-click="datasource.remove()" aria-label="{{'Remove' | translate}}" xattr-fullsize="btn-block" xattr-theme="btn-danger" xattr-disabled="">
+                        <i class="glyphicon glyphicon-remove" icon-theme=""></i>
+                    </button>
+                </div>
+            </div>
+            <div class="active-bar" ng-hide="!datasource.editing &amp;&amp; !datasource.inserting">
+                <div class="component-holder ng-scope" data-component="crn-button" id="btn_crud_post_43514">
+                    <button class="btn k-button btn-block btn-success btn-fab" ng-click="datasource.post()" aria-label="{{'SaveChanges' | translate}}" xattr-fullsize="btn-block" xattr-theme="btn-success" xattr-disabled="">
+                        <i class="glyphicon glyphicon-ok" icon-theme=""></i>
+                    </button>
+                </div>
+                <div class="component-holder ng-scope" data-component="crn-button" id="btn_crud_cancel_43514">
+                    <button class="btn k-button btn-block btn-danger btn-fab" ng-click="datasource.cancel()" aria-label="{{'CancelChanges' | translate}}" xattr-fullsize="btn-block" xattr-theme="btn-danger" xattr-disabled="">
+                        <i class="glyphicon glyphicon-ban-circle" icon-theme=""></i>
+                    </button>
+                </div>
+            </div>
+            <br>
+            <div class="crn-fieldset" ng-disabled="!datasource.editing &amp;&amp; !datasource.inserting">
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-nome-43514" class="">
+                        <div class="form-group">
+                                <label for="textinput-nome" class="">Nome</label>
+                                <input type="text" ng-model="Pet.active.nome" class="form-control k-textbox" id="textinput-nome" placeholder="Nome" mask="" mask-placeholder="" ng-required="false">
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-idade-43514" class="">
+                        <div class="form-group">
+                                <label for="textinput-idade" class="">Idade</label>
+                                <input type="integer" ng-model="Pet.active.idade" class="form-control k-textbox" id="textinput-idade" placeholder="Idade" mask="" mask-placeholder="" ng-required="false">
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-raca-43514" class="">
+                        <div class="form-group">
+                                <label for="textinput-raca" class="">Raca</label>
+                                <input type="text" ng-model="Pet.active.raca" class="form-control k-textbox" id="textinput-raca" placeholder="Raca" mask="" mask-placeholder="" ng-required="false">
+                        </div>
+                    </div>
+                <!-- NtoN  -->
+                <!-- NtoN  end-->
+            </div>
+        </form>
+    </section>
+    <section class="form" ng-show="Pet.editing || Pet.inserting">
+        <form>
+            <div>
+                <!-- OneToN -->
+                <!-- OneToOne  end -->
+            </div>
+        </form>
+    </section>
+</div>
+
+
+</div>
